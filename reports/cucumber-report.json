@@ -1,0 +1,191 @@
+[
+  {
+    "description": "  As a user\n  I want to search for cars on AutoTrader\n  So that I can find cars matching my criteria",
+    "elements": [
+      {
+        "description": "",
+        "id": "autotrader-car-search;search-for-audi-cars-under-£5000-in-rh2-7pe",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Search for Audi cars under £5000 in RH2 7PE",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am on the AutoTrader homepage",
+            "match": {
+              "location": "src\\steps\\car_search.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 733719699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I accept all cookies",
+            "match": {
+              "location": "src\\steps\\car_search.steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3166629699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I enter the postcode \"RH2 7PE\"",
+            "match": {
+              "location": "src\\steps\\car_search.steps.ts:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22537099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I select \"Audi\" from the make dropdown",
+            "match": {
+              "location": "src\\steps\\car_search.steps.ts:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33596599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I select \"5000\" from the max price dropdown",
+            "match": {
+              "location": "src\\steps\\car_search.steps.ts:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1422471700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I click the search button",
+            "match": {
+              "location": "src\\steps\\car_search.steps.ts:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3330041600
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "autotrader-car-search;search-for-kia-cars-under-£5000-in-rh2-7pe",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Search for Kia cars under £5000 in RH2 7PE",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "I am on the AutoTrader homepage",
+            "match": {
+              "location": "src\\steps\\car_search.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 702888499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I accept all cookies",
+            "match": {
+              "location": "src\\steps\\car_search.steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3248525599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I enter the postcode \"RH2 7PE\"",
+            "match": {
+              "location": "src\\steps\\car_search.steps.ts:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16151800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I select \"Kia\" from the make dropdown",
+            "match": {
+              "location": "src\\steps\\car_search.steps.ts:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23501399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I select \"5000\" from the max price dropdown",
+            "match": {
+              "location": "src\\steps\\car_search.steps.ts:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 311339299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I click the search button",
+            "match": {
+              "location": "src\\steps\\car_search.steps.ts:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3922777299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "autotrader-car-search",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "AutoTrader Car Search",
+    "tags": [],
+    "uri": "features\\car_search.feature"
+  }
+]
