@@ -1,6 +1,13 @@
 # AutoTrader Automation Framework
 
-A TypeScript-based Playwright automation framework with Cucumber BDD for testing car searches on [AutoTrader UK](https://www.autotrader.co.uk/).
+This framework is designed for automated testing of the [AutoTrader UK](https://www.autotrader.co.uk/) website, ensuring its core functionalities perform as expected. It utilizes a Behavior-Driven Development (BDD) approach with Cucumber, allowing for clear and collaborative test scenario definitions. Under the hood, Playwright is employed for robust and reliable browser automation, enabling comprehensive interaction with web elements.
+
+Key capabilities of this framework include:
+- Navigating to specific pages within the AutoTrader UK site.
+- Interacting with web elements, such as handling cookie consent pop-ups.
+- Searching for cars based on various criteria (e.g., postcode, make, maximum price).
+- Applying filters to refine search queries.
+- Verifying that search results accurately reflect the applied filters and criteria.
 
 ## Prerequisites
 - **Node.js**: v16 or later (includes npm). Download from [nodejs.org](https://nodejs.org/).
@@ -44,19 +51,12 @@ cd autotrader-automation
 
 ### Install Dependencies
 ```bash
-cd ..\Automation repo\typescript\autotrader-automation
-npm install -D @playwright/test @cucumber/cucumber typescript ts-node @types/node @cucumber/pretty-formatter playwright cucumber-html-reporter eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
+npm install
 ```
 
 ### Install Playwright Browsers
 ```bash
 npx playwright install
-```
-
-### Create Folders (if not already present)
-```bash
-mkdir reports
-mkdir screenshots
 ```
 
 ## Running Tests Locally
@@ -74,11 +74,14 @@ npm run lint -- --fix
 ```bash
 npm test
 ```
+- Creates `reports` and `screenshots` directories if they don't exist.
 - Runs Cucumber tests and generates `reports/cucumber-report.json`.
 - Screenshots are saved in `screenshots/` only on failures.
+- Automatically generates the HTML report (`reports/cucumber-report.html`) upon successful test completion.
 
 ### Generate HTML Report
 ```bash
 npm run report
 ```
-- Converts `cucumber-report.json` to `cucumber-report.html` in `reports/`.
+- Converts `reports/cucumber-report.json` to `cucumber-report.html` in `reports/`.
+- Note: This step is now automatically executed after `npm test` completes successfully. You can run this command manually if you need to regenerate the report without re-running the tests.
